@@ -87,3 +87,40 @@ body {
     font-weight: bold;
     line-height: 1.2;
 }
+
+.website-btn {
+    background-color: #ffffff;
+    color: #E6007E;
+    border: 2px solid #E6007E;
+}
+
+.website-btn:hover {
+    background-color: #fff0f8;
+}
+
+.social-row {
+    margin-top: 28px;
+    display: flex;
+    justify-content: center;
+}
+
+.instagram-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: #888;
+    font-size: 14px;
+    transition: color 0.2s, transform 0.2s;
+}
+
+.instagram-link:hover {
+    color: #E6007E;
+    transform: scale(1.04);
+}
+
+.instagram-icon {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+}

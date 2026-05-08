@@ -7,6 +7,14 @@
     <title>Zitoo - Cloud Kitchen Near You</title>
     <link rel="icon" type="image/jpeg" href="assets/favicon.jpeg">
     <link rel="stylesheet" href="style.css">
+    <script>
+        const LINKS = {
+            googlePlay: "https://play.google.com/store/apps/details?id=zitookitchen.com&pcampaignid=web_share",
+            appStore:   "https://apps.apple.com/in/app/zitoo/id6762011484",
+            website:    "http://zitookitchen.com/",
+            instagram:  "https://www.instagram.com/zitoo.cloud?igsh=Mjg5czE1cTRibHhr",
+        };
+    </script>
 </head>
 
 <body>
@@ -16,8 +24,7 @@
 
         <div class="store-buttons">
             <!-- Google Play -->
-            <a href="https://play.google.com/store/apps/details?id=zitookitchen.com&pcampaignid=web_share"
-                class="store-btn" target="_blank" rel="noopener noreferrer">
+            <a id="link-google-play" class="store-btn" target="_blank" rel="noopener noreferrer">
                 <img src="assets/google-play-color.png" alt="Google Play">
                 <div class="btn-text">
                     <span class="btn-label">GET IT ON</span>
@@ -26,16 +33,46 @@
             </a>
 
             <!-- App Store -->
-            <a href="https://apps.apple.com/in/app/zitoo/id6762011484" class="store-btn" target="_blank"
-                rel="noopener noreferrer">
+            <a id="link-app-store" class="store-btn" target="_blank" rel="noopener noreferrer">
                 <img src="assets/apple-logo.png" alt="App Store" style="filter: invert(1);">
                 <div class="btn-text">
                     <span class="btn-label">DOWNLOAD ON THE</span>
                     <span class="btn-store">App Store</span>
                 </div>
             </a>
+
+            <!-- Website -->
+            <a id="link-website" class="store-btn website-btn" target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    style="flex-shrink:0">
+                    <circle cx="12" cy="12" r="10" />
+                    <line x1="2" y1="12" x2="22" y2="12" />
+                    <path
+                        d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                </svg>
+                <div class="btn-text">
+                    <span class="btn-label">VISIT OUR</span>
+                    <span class="btn-store">Website</span>
+                </div>
+            </a>
+        </div>
+
+        <!-- Instagram link below main buttons -->
+        <div class="social-row">
+            <a id="link-instagram" class="instagram-link" target="_blank" rel="noopener noreferrer">
+                <img src="assets/instagram.png" alt="Instagram" class="instagram-icon">
+                <span>Follow us on Instagram</span>
+            </a>
         </div>
     </div>
+
+    <script>
+        document.getElementById("link-google-play").href = LINKS.googlePlay;
+        document.getElementById("link-app-store").href   = LINKS.appStore;
+        document.getElementById("link-website").href     = LINKS.website;
+        document.getElementById("link-instagram").href   = LINKS.instagram;
+    </script>
 </body>
 
 </html>
